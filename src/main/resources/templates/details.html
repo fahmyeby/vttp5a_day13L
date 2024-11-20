@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Detail</title>
+</head>
+<body>
+    <h1>Person Details</h1>
+    <p><strong>Id:</strong> <span th:text="${person.id}"></span></p>
+    <p><strong>First Name:</strong> <span th:text="${person.firstName}"></span></p>
+    <p><strong>Last Name:</strong> <span th:text="${person.lastName}"></span></p>
+    <p><strong>Email:</strong> <span th:text="${person.email}"></span></p>
+    <p><strong>Salary:</strong> <span th:text="${person.salary}"></span></p>
+    <p><strong>Date of Birth:</strong> <span th:text="${#dates.format(person.dateOfBirth, 'dd/MM/yyyy')}"></span></p>
+</body>
+</html>
