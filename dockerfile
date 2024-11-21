@@ -1,12 +1,12 @@
 # base image with JDK to build and run java app
-FROM maven:3.9.3-eclipse-temurin-20
+FROM maven:3.9.9-eclipse-temurin-23
 
 #labeling of dockerfile etc.
 LABEL name = "VttpDay13lApplication"
 LABEL MAINTAINER = "Fahmy Eby"
 LABEL description = "This is VTTP 5 SSF Day 13L"
 
-ARG APP_DIR = /app
+ARG APP_DIR=/app
 
 # directory where src code resides
 WORKDIR ${APP_DIR}
